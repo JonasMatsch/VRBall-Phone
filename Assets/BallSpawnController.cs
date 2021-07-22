@@ -26,8 +26,7 @@ public class BallSpawnController : MonoBehaviour
     {
         time += Time.deltaTime;
 
-        int seconds = (int)Math.Round(time);
-
+        int seconds = Math.Max(1,(int)Math.Round(time));
 
             if (Input.touchCount > 0)
             {
@@ -40,12 +39,9 @@ public class BallSpawnController : MonoBehaviour
                 Vector3 spawnPosition = new Vector3((positionX-950)/33.3f, 10, (positionY-520)/33.3f);
 
                 if(copy == null)
-                copy = PhotonNetwork.Instantiate("Enemy", spawnPosition, Quaternion.identity, 0);
-            /*if(copy == null)
-            {
-                copy.GetComponent<Rigidbody>().mass = (weight * seconds) * copy.GetComponent<Rigidbody>().mass;
-
-            }*/
+                {
+                    copy = PhotonNetwork.Instantiate("Enemy", spawnPosition, Quaternion.identity, 0);
+                }
         }
 
         if(copy != null)
