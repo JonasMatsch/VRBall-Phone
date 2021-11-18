@@ -34,8 +34,6 @@ public class BallSpawnController : MonoBehaviour
                 float positionX = touch.position.x;
                 float positionY = touch.position.y;
 
-        
-
                 Vector3 spawnPosition = new Vector3((positionX-950)/33.3f, 10, (positionY-520)/33.3f);
 
                 if(copy == null)

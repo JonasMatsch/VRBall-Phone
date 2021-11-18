@@ -61,9 +61,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\BallSpawnController.cs" />
-    <Compile Include="Assets\ColorController.cs" />
-    <Compile Include="Assets\DataHolder.cs" />
-    <Compile Include="Assets\MouseMapper.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
@@ -76,11 +73,9 @@
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
-    <Compile Include="Assets\PhotonConnector.cs" />
     <Compile Include="Assets\PhotonController.cs" />
     <Compile Include="Assets\PizzaController.cs" />
     <Compile Include="Assets\playerballcontroller.cs" />
-    <Compile Include="Assets\RestartController.cs" />
     <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
     <None Include="Assets\Photon\PhotonUnityNetworking\link.xml" />
     <None Include="Assets\Photon\PhotonUnityNetworking\readme.txt" />

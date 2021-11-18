@@ -13,6 +13,6 @@ public class PizzaController : MonoBehaviour
     void Update()
     {
         Quaternion current = pizzabody.rotation;
-        pizzabody.rotation = Quaternion.Slerp(current, Quaternion.identity, 0.5f);
+        pizzabody.rotation = Quaternion.Slerp(current, Quaternion.identity, 0.01f);
     }
 }
